@@ -2,8 +2,8 @@
 body{
 
     min-height: 100vh;
-    background-color: #f7dada ;
-    background-size:cover;
+    background-image:url(bg.jpg)  ;
+    background-size:repeat;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
@@ -89,6 +89,15 @@ header{
 
 }
 
+.name1 p, .name2 p, .name3 p, .name4 p,
+.name5 p,.name6 p, .name7 p, .name8 p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif; 
+    font-size: 12px;
+    color: #fff;
+
+}
+
 /*Sidebare*/
 
 .sideBar{
@@ -98,7 +107,8 @@ header{
     width: 57px;
     height:100vh;
     background-color:#222 ;
-    transition: width 0.75s ease-out;
+    transition: width 0.2s ease;
+    cursor: pointer;
 }
 
 .sideBar li{
@@ -108,18 +118,25 @@ header{
     justify-content: flex-start;
     align-items: center;
     list-style: none ;
+    cursor: pointer;
 }
 
 .sideBar ul{
     position: relative;
     margin-left :-30px ;
     list-style: none ;
+    cursor: pointer;
 }
 .sideBar ul li{
-    margin-bottom: 30px;
+    
+    margin-bottom: 15px;
+    width:max-content;
 }
 
-.sideBar .name{
+
+
+ul .name1,ul .name2,ul .name3,ul .name4,
+ul .name5, ul .name6, ul .name7, ul .name8, .sideBar li .name{
     display: none;
 }
 
@@ -134,17 +151,27 @@ header{
     width: 48px;
     height: 40px;
     border-radius: 50%;
+    cursor: pointer;
     margin-left:-15px ;
 }
 .coordonate{
     display: none;
-    width: 50px;
+}
+
+.coordonate.active{
+    position: relative;
+    bottom: 5px;
+    display: inline-block;
+    width: 100px;
+    margin-left: 5px;
+    cursor: pointer;
 }
 .coordonate h7{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif; 
     font-size: 10px;
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -153,10 +180,19 @@ header{
     'Open Sans', 'Helvetica Neue', sans-serif; 
     font-size: 5px;
     color: #fff;
+    cursor: pointer;
 }
 .arrow{
     display: none;
 }
+
+.arrow.active{
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -171,3 +207,23 @@ header{
 .sideBar .name.active{
     display: flex;
 }
+
+ul .name1.active,ul .name2.active,ul .name3.active,ul .name4.active,
+ul .name5.active, ul .name6.active, ul .name7.active, ul .name8.active{
+    display: flex;
+}
+
+ul .name1.active ,ul .name2.active,ul .name3.active,ul .name4.active,
+ul .name5.active, ul .name6.active, ul .name7.active, ul .name8.active{
+    display: flex;
+}
+
+ul .name1.active:hover,ul .name2.active:hover,ul .name3.active:hover,ul .name4.active:hover,
+ul .name5.active:hover, ul .name6.active:hover, ul .name7.active:hover, ul .name8.active:hover{
+    background-color: #888;
+    width: 120px;
+    border-radius: 6px;
+
+}
+
+
